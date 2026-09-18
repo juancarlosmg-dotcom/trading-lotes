@@ -1,4 +1,516 @@
 {
+  "addendum_f227_pase4": {
+    "decision": "opcion (ii) del usuario (2026-09-18): ningun arranque >= 2020-01-01 alcanza S3 >= 0,80, asi que el panel (b) queda NO CONCLUYENTE POR DATOS, la ventana NO se acorta (los npz del panel (b) son los mismos, sin tocar) y la familia se juzga con el panel (a) solo",
+    "fecha": "2026-09-18",
+    "fuente_medicion": [
+      "research/f227_andamiaje/medir_s3.py",
+      "research/f227_andamiaje/datos/s3_por_inicio.json"
+    ],
+    "paneles_npz_sin_cambio": true,
+    "preregistro": {
+      "bytes_sellados": 15813,
+      "path": "docs/PREREGISTRO_TORTUGAS_SISTEMA2_v3.md",
+      "sello_sha256": "9573bfbe4926c6fc74d480d360a39912ef9fa6a0e562a8d436c5aaf2ab73d4f6"
+    },
+    "s3_definicion": "sd_ok/sd_tot de la celda b/main con la semilla sellada 20260917000: dias-simbolo con posicion MANTENIDA de un dia para otro que tienen observacion de funding, sobre todos esos dias-simbolo (el dia de entrada y el de salida no cuentan)",
+    "s3_en_la_ventana_sellada": 0.6899,
+    "s3_maximo": {
+      "S3": 0.7837,
+      "inicio": "2020-08-01"
+    },
+    "s3_por_arranque": [
+      {
+        "S3": 0.7097,
+        "anios": 6.67,
+        "inicio": "2020-01-01",
+        "sd_ok": 13241,
+        "sd_tot": 18656,
+        "sesiones": 2437,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7092,
+        "anios": 6.59,
+        "inicio": "2020-02-01",
+        "sd_ok": 14135,
+        "sd_tot": 19932,
+        "sesiones": 2406,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7254,
+        "anios": 6.51,
+        "inicio": "2020-03-01",
+        "sd_ok": 13816,
+        "sd_tot": 19045,
+        "sesiones": 2377,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7509,
+        "anios": 6.42,
+        "inicio": "2020-04-01",
+        "sd_ok": 14344,
+        "sd_tot": 19102,
+        "sesiones": 2346,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7351,
+        "anios": 6.34,
+        "inicio": "2020-05-01",
+        "sd_ok": 14066,
+        "sd_tot": 19134,
+        "sesiones": 2316,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7339,
+        "anios": 6.26,
+        "inicio": "2020-06-01",
+        "sd_ok": 14683,
+        "sd_tot": 20008,
+        "sesiones": 2285,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7155,
+        "anios": 6.18,
+        "inicio": "2020-07-01",
+        "sd_ok": 12940,
+        "sd_tot": 18085,
+        "sesiones": 2255,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7837,
+        "anios": 6.09,
+        "inicio": "2020-08-01",
+        "sd_ok": 13637,
+        "sd_tot": 17401,
+        "sesiones": 2224,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7381,
+        "anios": 6.01,
+        "inicio": "2020-09-01",
+        "sd_ok": 13449,
+        "sd_tot": 18222,
+        "sesiones": 2193,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.6901,
+        "anios": 5.92,
+        "inicio": "2020-10-01",
+        "sd_ok": 12874,
+        "sd_tot": 18655,
+        "sesiones": 2163,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7371,
+        "anios": 5.84,
+        "inicio": "2020-11-01",
+        "sd_ok": 13610,
+        "sd_tot": 18463,
+        "sesiones": 2132,
+        "simbolos": 189,
+        "simbolos_caidos_sin_barras": 0
+      },
+      {
+        "S3": 0.7102,
+        "anios": 5.76,
+        "inicio": "2020-12-01",
+        "sd_ok": 14608,
+        "sd_tot": 20569,
+        "sesiones": 2102,
+        "simbolos": 188,
+        "simbolos_caidos_sin_barras": 1
+      },
+      {
+        "S3": 0.7124,
+        "anios": 5.67,
+        "inicio": "2021-01-01",
+        "sd_ok": 13390,
+        "sd_tot": 18796,
+        "sesiones": 2071,
+        "simbolos": 188,
+        "simbolos_caidos_sin_barras": 1
+      },
+      {
+        "S3": 0.7119,
+        "anios": 5.59,
+        "inicio": "2021-02-01",
+        "sd_ok": 14414,
+        "sd_tot": 20247,
+        "sesiones": 2040,
+        "simbolos": 188,
+        "simbolos_caidos_sin_barras": 1
+      },
+      {
+        "S3": 0.7144,
+        "anios": 5.51,
+        "inicio": "2021-03-01",
+        "sd_ok": 12895,
+        "sd_tot": 18051,
+        "sesiones": 2012,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6564,
+        "anios": 5.42,
+        "inicio": "2021-04-01",
+        "sd_ok": 12068,
+        "sd_tot": 18384,
+        "sesiones": 1981,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6789,
+        "anios": 5.34,
+        "inicio": "2021-05-01",
+        "sd_ok": 12195,
+        "sd_tot": 17964,
+        "sesiones": 1951,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6547,
+        "anios": 5.26,
+        "inicio": "2021-06-01",
+        "sd_ok": 11816,
+        "sd_tot": 18049,
+        "sesiones": 1920,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6372,
+        "anios": 5.18,
+        "inicio": "2021-07-01",
+        "sd_ok": 11886,
+        "sd_tot": 18654,
+        "sesiones": 1890,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.702,
+        "anios": 5.09,
+        "inicio": "2021-08-01",
+        "sd_ok": 12549,
+        "sd_tot": 17876,
+        "sesiones": 1859,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.7074,
+        "anios": 5.01,
+        "inicio": "2021-09-01",
+        "sd_ok": 13084,
+        "sd_tot": 18496,
+        "sesiones": 1828,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6394,
+        "anios": 4.92,
+        "inicio": "2021-10-01",
+        "sd_ok": 10306,
+        "sd_tot": 16119,
+        "sesiones": 1798,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6715,
+        "anios": 4.84,
+        "inicio": "2021-11-01",
+        "sd_ok": 11238,
+        "sd_tot": 16735,
+        "sesiones": 1767,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.6648,
+        "anios": 4.76,
+        "inicio": "2021-12-01",
+        "sd_ok": 12733,
+        "sd_tot": 19154,
+        "sesiones": 1737,
+        "simbolos": 187,
+        "simbolos_caidos_sin_barras": 2
+      },
+      {
+        "S3": 0.7371,
+        "anios": 4.67,
+        "inicio": "2022-01-01",
+        "sd_ok": 10037,
+        "sd_tot": 13616,
+        "sesiones": 1706,
+        "simbolos": 186,
+        "simbolos_caidos_sin_barras": 3
+      },
+      {
+        "S3": 0.6339,
+        "anios": 4.59,
+        "inicio": "2022-02-01",
+        "sd_ok": 11041,
+        "sd_tot": 17417,
+        "sesiones": 1675,
+        "simbolos": 185,
+        "simbolos_caidos_sin_barras": 4
+      },
+      {
+        "S3": 0.6542,
+        "anios": 4.51,
+        "inicio": "2022-03-01",
+        "sd_ok": 9920,
+        "sd_tot": 15164,
+        "sesiones": 1647,
+        "simbolos": 183,
+        "simbolos_caidos_sin_barras": 6
+      },
+      {
+        "S3": 0.6051,
+        "anios": 4.42,
+        "inicio": "2022-04-01",
+        "sd_ok": 9454,
+        "sd_tot": 15624,
+        "sesiones": 1616,
+        "simbolos": 183,
+        "simbolos_caidos_sin_barras": 6
+      },
+      {
+        "S3": 0.5958,
+        "anios": 4.34,
+        "inicio": "2022-05-01",
+        "sd_ok": 8370,
+        "sd_tot": 14048,
+        "sesiones": 1586,
+        "simbolos": 181,
+        "simbolos_caidos_sin_barras": 8
+      },
+      {
+        "S3": 0.6501,
+        "anios": 4.26,
+        "inicio": "2022-06-01",
+        "sd_ok": 10570,
+        "sd_tot": 16259,
+        "sesiones": 1555,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.6157,
+        "anios": 4.18,
+        "inicio": "2022-07-01",
+        "sd_ok": 9593,
+        "sd_tot": 15580,
+        "sesiones": 1525,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.6568,
+        "anios": 4.09,
+        "inicio": "2022-08-01",
+        "sd_ok": 8803,
+        "sd_tot": 13403,
+        "sesiones": 1494,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.6259,
+        "anios": 4.01,
+        "inicio": "2022-09-01",
+        "sd_ok": 8429,
+        "sd_tot": 13467,
+        "sesiones": 1463,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5747,
+        "anios": 3.92,
+        "inicio": "2022-10-01",
+        "sd_ok": 7387,
+        "sd_tot": 12853,
+        "sesiones": 1433,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.6237,
+        "anios": 3.84,
+        "inicio": "2022-11-01",
+        "sd_ok": 8083,
+        "sd_tot": 12959,
+        "sesiones": 1402,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.633,
+        "anios": 3.76,
+        "inicio": "2022-12-01",
+        "sd_ok": 7189,
+        "sd_tot": 11357,
+        "sesiones": 1372,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5645,
+        "anios": 3.67,
+        "inicio": "2023-01-01",
+        "sd_ok": 6813,
+        "sd_tot": 12069,
+        "sesiones": 1341,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.7027,
+        "anios": 3.59,
+        "inicio": "2023-02-01",
+        "sd_ok": 6761,
+        "sd_tot": 9622,
+        "sesiones": 1310,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.6094,
+        "anios": 3.51,
+        "inicio": "2023-03-01",
+        "sd_ok": 7181,
+        "sd_tot": 11783,
+        "sesiones": 1282,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5105,
+        "anios": 3.42,
+        "inicio": "2023-04-01",
+        "sd_ok": 6414,
+        "sd_tot": 12565,
+        "sesiones": 1251,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5994,
+        "anios": 3.34,
+        "inicio": "2023-05-01",
+        "sd_ok": 6149,
+        "sd_tot": 10258,
+        "sesiones": 1221,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5402,
+        "anios": 3.26,
+        "inicio": "2023-06-01",
+        "sd_ok": 5177,
+        "sd_tot": 9584,
+        "sesiones": 1190,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5315,
+        "anios": 3.18,
+        "inicio": "2023-07-01",
+        "sd_ok": 6396,
+        "sd_tot": 12033,
+        "sesiones": 1160,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5232,
+        "anios": 3.09,
+        "inicio": "2023-08-01",
+        "sd_ok": 6221,
+        "sd_tot": 11891,
+        "sesiones": 1129,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.5657,
+        "anios": 3.01,
+        "inicio": "2023-09-01",
+        "sd_ok": 5940,
+        "sd_tot": 10500,
+        "sesiones": 1098,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.4996,
+        "anios": 2.92,
+        "inicio": "2023-10-01",
+        "sd_ok": 5793,
+        "sd_tot": 11596,
+        "sesiones": 1068,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.4469,
+        "anios": 2.84,
+        "inicio": "2023-11-01",
+        "sd_ok": 4676,
+        "sd_tot": 10464,
+        "sesiones": 1037,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.4942,
+        "anios": 2.76,
+        "inicio": "2023-12-01",
+        "sd_ok": 5139,
+        "sd_tot": 10398,
+        "sesiones": 1007,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      },
+      {
+        "S3": 0.546,
+        "anios": 2.67,
+        "inicio": "2024-01-01",
+        "sd_ok": 5012,
+        "sd_tot": 9179,
+        "sesiones": 976,
+        "simbolos": 177,
+        "simbolos_caidos_sin_barras": 12
+      }
+    ]
+  },
   "fuentes": [
     {
       "descargado_ahora": false,
@@ -1127,10 +1639,12 @@
       ],
       "sin_funding": [],
       "ultima": 20260902,
+      "uso": "research-only: las celdas se calculan, su veredicto esta EXCLUIDO de la familia (parada S3 del sello v2, disparada)",
       "ventana_sellada": [
         "2019-09-08",
         "2026-09-02"
-      ]
+      ],
+      "veredicto": "NO_CONCLUYENTE_POR_DATOS"
     },
     "c": {
       "bytes": 4080524,
