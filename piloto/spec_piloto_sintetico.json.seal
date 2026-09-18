@@ -1,0 +1,6 @@
+SEAL sha256 = 7fead5b23ff0bea010613d524a803533d3e6eef14c8c3b56075f3b4b8af9236e  (over the WHOLE file spec_piloto_sintetico.json)
+SEAL git     = 93db61634d81c56d44a4365a288570fbf83ae9b4 2026-09-17T15:05:46Z
+SEAL time    = 2026-09-17T15:21:09Z
+SEAL reproduce: sha256sum spec_piloto_sintetico.json
+# run_id = piloto_sintetico_20260917
+# spec EN GIT en ese commit: NO (fichero aun sin commitear)

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/trading-lotes/esquema_spec.schema.json",
+  "title": "spec sellada de un lote (F222)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["run_id", "code_commit", "code_subtree", "data_cut", "seed_master",
+               "derivacion_semilla", "calculo", "unidades", "parametros",
+               "reglas_parada", "outputs", "ledger_id"],
+  "properties": {
+    "run_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_]*$"},
+    "descripcion": {"type": "string"},
+    "code_commit": {"type": "string", "minLength": 7},
+    "code_subtree": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "pattern": "^[^/][^\u0000]*$"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    },
+    "data_cut": {
+      "type": "object",
+      "required": ["tipo"],
+      "properties": {
+        "tipo": {"enum": ["SINTETICO", "FICHERO"]},
+        "generador": {"type": "string"},
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "seed_master": {"type": "string", "minLength": 1},
+    "derivacion_semilla": {"const": "sha256(seed_master||':'||i)[:16] -> SeedSequence -> PCG64"},
+    "calculo": {"type": "string", "minLength": 1},
+    "unidades": {"type": "integer", "minimum": 1},
+    "parametros": {"type": "object"},
+    "reglas_parada": {
+      "type": "object",
+      "required": ["estadistico_que_decide", "umbral", "max_segundos_unidad",
+                   "max_ram_mb_unidad", "latido_segundos"],
+      "properties": {
+        "estadistico_que_decide": {"type": "string"},
+        "umbral": {},
+        "max_segundos_unidad": {"type": "number", "exclusiveMinimum": 0},
+        "max_ram_mb_unidad": {"type": "number", "exclusiveMinimum": 0},
+        "latido_segundos": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "outputs": {"type": "array", "items": {"type": "string"}},
+    "ledger_id": {"type": "string", "minLength": 1},
+    "reference_runtime_s": {"type": "number", "minimum": 0},
+    "valores_esperados": {
+      "type": "object",
+      "required": ["unidades"],
+      "properties": {
+        "nota": {"type": "string"},
+        "unidades": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["unidad", "sha256_dato"],
+            "properties": {
+              "unidad": {"type": "integer", "minimum": 0},
+              "sha256_dato": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "media": {"type": "number"},
+              "desviacion": {"type": "number"},
+              "minimo": {"type": "number"},
+              "maximo": {"type": "number"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "calculo": "normales_resumen",
+  "code_commit": "PENDIENTE_SUBIDA_USUARIO",
+  "code_subtree": [
+    {
+      "path": "__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "motor/__init__.py",
+      "sha256": "e74471c615f2c521c9679442c9e073c290c3f49c4e284cae28ccc240af94c4d4"
+    },
+    {
+      "path": "motor/nucleo.py",
+      "sha256": "9414975f7c4761fba3650e29cafb8c9fc418fd92f4261c9978ff3d96c964d6da"
+    },
+    {
+      "path": "sellar_spec.py",
+      "sha256": "42238ab8156986255b86113840c7d270e1f5da00ac8ae290e3114bb84ad40d76"
+    }
+  ],
+  "data_cut": {
+    "generador": "numpy PCG64 standard_normal a partir de seed_i, sin datos de mercado",
+    "tipo": "SINTETICO"
+  },
+  "derivacion_semilla": "sha256(seed_master||':'||i)[:16] -> SeedSequence -> PCG64",
+  "descripcion": "Lote PILOTO sintetico de F222. No decide nada de mercado: existe para medir el andamiaje (determinismo, reanudacion, aceptacion) y para dar el primer numero de tiempo que el diseno no tenia.",
+  "ledger_id": "f222_piloto_sintetico_20260917",
+  "outputs": [
+    "units/unit_0000.npy",
+    "units/unit_0001.npy",
+    "units/unit_0002.npy",
+    "units/unit_0003.npy",
+    "units/unit_0004.npy",
+    "units/unit_0005.npy",
+    "units/unit_0006.npy",
+    "units/unit_0007.npy",
+    "LOG.txt"
+  ],
+  "parametros": {
+    "n_por_unidad": 100000
+  },
+  "reference_runtime_s": 0.155,
+  "reglas_parada": {
+    "estadistico_que_decide": "NINGUNO: lote de calibracion; no gatilla ninguna decision de cartera",
+    "latido_segundos": 60,
+    "max_ram_mb_unidad": 512,
+    "max_segundos_unidad": 1200,
+    "umbral": null
+  },
+  "run_id": "piloto_sintetico_20260917",
+  "seed_master": "f222_piloto_20260917",
+  "unidades": 8,
+  "valores_esperados": {
+    "nota": "resultado CONOCIDO del piloto: sha256 del .npy de cada unidad, MEDIDO en el VPS el 2026-09-17 con el mismo codigo que fija code_subtree; media/desviacion/minimo/maximo son los cuatro numeros que guarda cada unidad",
+    "unidades": [
+      {
+        "desviacion": 1.0040699373851774,
+        "maximo": 4.288577425755065,
+        "media": 0.0024950144848719337,
+        "minimo": -4.903548055502666,
+        "sha256_dato": "17e3315c8aeafa7ed5095d96ee01461dbc8b79773e14c5e04f2fdc6e15e089b9",
+        "unidad": 0
+      },
+      {
+        "desviacion": 0.9992987643168147,
+        "maximo": 4.067755936372868,
+        "media": -0.004704477018832751,
+        "minimo": -4.646854343744264,
+        "sha256_dato": "5fce7481aa00b8964f25c881637e6365611707f16a22fa6acb1f660f909bf8e6",
+        "unidad": 1
+      },
+      {
+        "desviacion": 1.0026503856443234,
+        "maximo": 4.5386193470021645,
+        "media": 0.002280602149896557,
+        "minimo": -4.233026181218678,
+        "sha256_dato": "58387860f9803afefe19248118090fe8d4580773aee4d5b995263057975aa92d",
+        "unidad": 2
+      },
+      {
+        "desviacion": 0.9975517750276741,
+        "maximo": 4.3424562925174,
+        "media": 0.0003610689315408999,
+        "minimo": -4.635843008751671,
+        "sha256_dato": "add66eb5b246512d6cadb42702256f3f0702c9bcce7e328ce0c14f5efbd62509",
+        "unidad": 3
+      },
+      {
+        "desviacion": 1.000228026702164,
+        "maximo": 4.093423303324232,
+        "media": 0.0007812325875561613,
+        "minimo": -4.132587667546521,
+        "sha256_dato": "1a5d6e14cfae1da782d3fb638d0fef8f87e10efcf293e0b4d99bcc391bc54cdc",
+        "unidad": 4
+      },
+      {
+        "desviacion": 0.9982312068759989,
+        "maximo": 4.1818416117544945,
+        "media": 0.0007179615410211433,
+        "minimo": -5.32528639032744,
+        "sha256_dato": "6f83049ac006ced496e589013087a62125cfd5e8ec31859a610b7ae9df4826f1",
+        "unidad": 5
+      },
+      {
+        "desviacion": 0.999935306001435,
+        "maximo": 4.065405089966188,
+        "media": 0.0038512578993171844,
+        "minimo": -5.027877373318865,
+        "sha256_dato": "641b526776e16fd5864ff0ccfda7c2a317bc1cbdb0e022738015230b340190f7",
+        "unidad": 6
+      },
+      {
+        "desviacion": 1.0020888794515839,
+        "maximo": 4.245910733717965,
+        "media": 0.001954324459300806,
+        "minimo": -4.595028591543549,
+        "sha256_dato": "d3fb79a20a2df65f72f2d4fd1ef6bd2748bd6cdd223088435409c87afeb9c7f7",
+        "unidad": 7
+      }
+    ]
+  }
+}

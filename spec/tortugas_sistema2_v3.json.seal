@@ -1,0 +1,6 @@
+SEAL sha256 = 81b85204d67ac9cd632ad77b7b6dc14568dc02623eb1c52a32230090d1771cdd  (over the WHOLE file tortugas_sistema2_v3.json)
+SEAL git     = 12111b8d097776e862c538ba5de65f170e769de1 2026-09-18T05:48:31Z
+SEAL time    = 2026-09-18T05:56:54Z
+SEAL reproduce: sha256sum tortugas_sistema2_v3.json
+# run_id = tortugas_sistema2_v3
+# spec EN GIT en ese commit: NO (fichero aun sin commitear)

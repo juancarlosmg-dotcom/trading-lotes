@@ -1,0 +1,21 @@
+"""lotes/motor -- F222: pure-computation batch engine (no network, no credentials)."""
+from .nucleo import (  # noqa: F401
+    CALCULOS,
+    DERIVACION_CANONICA,
+    ErrorLote,
+    VERSION_MOTOR,
+    calcular_unidad,
+    correr_lote,
+    escribir_manifiesto,
+    estado_unidad,
+    ficheros_subarbol,
+    leer_sello,
+    raiz_subarbol,
+    rng_unidad,
+    rutas_unidad,
+    semilla_unidad,
+    sha256_bytes,
+    sha256_fichero,
+    valida_spec,
+    verificar_subarbol,
+)
