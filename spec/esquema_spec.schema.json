@@ -51,6 +51,35 @@
     },
     "outputs": {"type": "array", "items": {"type": "string"}},
     "ledger_id": {"type": "string", "minLength": 1},
+    "arranque_runtime": {
+      "description": "F227/id 232: los modulos que el runner IMPORTA antes de correr_lote; lista (todos obligatorios) o el texto que los nombra (alternativas). Lo consume lotes/arranque.py.",
+      "oneOf": [
+        {"type": "string", "minLength": 1},
+        {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+      ]
+    },
+    "entradas": {
+      "description": "F236: ficheros de ENTRADA del lote. Viajan en el Drive DEL USUARIO bajo CARPETA_DRIVE/<carpeta>/, NUNCA en el repositorio publico (dato en bruto PROHIBIDO). El cuaderno los verifica contra estos sha256 ANTES del primer sorteo y la aceptacion exige que el lote cite el mismo conjunto (salida 14).",
+      "type": "object", "additionalProperties": false,
+      "required": ["ficheros"],
+      "properties": {
+        "carpeta": {"type": "string", "pattern": "^entradas/[a-z0-9][a-z0-9_]*$"},
+        "variable_entorno": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]*$"},
+        "ficheros": {
+          "description": "CONJUNTO de ficheros, no lista: `uniqueItems` rechaza el duplicado IDENTICO. JSON Schema no sabe exigir unicidad POR CLAVE, asi que un `nombre` repetido con otro bytes/sha256 lo rechaza la celda 5 del cuaderno (ENTRADA DUPLICADA), no este esquema (F236 pase 2, C3).",
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["nombre", "bytes", "sha256"],
+            "properties": {
+              "nombre": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"},
+              "bytes": {"type": "integer", "minimum": 0},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        }
+      }
+    },
     "reference_runtime_s": {"type": "number", "minimum": 0},
     "valores_esperados": {
       "type": "object",
